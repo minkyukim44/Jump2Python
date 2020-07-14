@@ -58,3 +58,34 @@ a * 2
 # 문자열 길이 구하기
 a_1 = "Life is too short"
 len(a_1)
+
+# 문자열 인덱싱과 슬라이싱
+a_2 = "Life is too short, You need Python"
+a_2[3]      # python counts a number from 0
+a_2[0]
+a_2[-1]
+
+b = a_2[0] + a_2[1] + a_2[2] + a_2[3]   #slicing
+b
+
+a_2[0:4]        # 0 <= a_2 < 4
+a_2[0:5]
+a_2[19:]
+a_2[:]
+a_2[19:-7]
+
+a_3 = "20010331Rainy"
+
+date = a_3[:8]
+weather = a_3[8:]
+date
+weather
+
+year = a_3[:4]
+day = a_3[4:8]
+year
+day
+
+sample = "Pithon"
+sample_fix = sample[0] + 'y' + sample[2:]
+sample_fix
