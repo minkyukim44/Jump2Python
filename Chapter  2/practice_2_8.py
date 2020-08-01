@@ -22,7 +22,7 @@ from copy import copy       # use a function, 'copy'
 a = [1,2,3]
 b = copy(a)
 a 
-b
+b 
 b is a              # a and b are different
 
 a, b = ('python','life')
