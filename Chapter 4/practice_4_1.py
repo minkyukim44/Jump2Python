@@ -48,3 +48,22 @@ def print_kwargs(**kwargs):
 
 print_kwargs(a=1)
 print_kwargs(name='foo',age=3)
+
+# each function has only one output
+# do not use 'return' more than one time
+def add_and_mul(a,b):
+    return a+b, a*b         
+
+result = add_and_mul(3,4)
+result1, result2 = add_and_mul(3,4)
+result1
+result2
+
+# method for escaping a function
+def say_nick(nick):
+    if nick == "idiot":
+        return
+    print("My nickname is %s" % nick)
+
+say_nick('yahoo')
+say_nick('idiot')
