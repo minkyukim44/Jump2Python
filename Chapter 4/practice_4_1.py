@@ -67,3 +67,26 @@ def say_nick(nick):
 
 say_nick('yahoo')
 say_nick('idiot')
+
+# default argument
+def say_myself(name, old, man=True):        # do not put non-default argments after default arguments
+    print("My name is %s" % name)
+    print("I'm %d years old" % old)
+    if man:
+        print("I'm a man")
+    else:
+        print("I'm a woman")
+
+# change a variable by functions
+a = 1
+def vartest(a):
+    a = a + 1
+    return a
+
+a = 1
+def vartest():
+    global a
+    a = a + 1
+
+# lambda
+add = lambda a, b: a+b          # do not need 'return' for an output
